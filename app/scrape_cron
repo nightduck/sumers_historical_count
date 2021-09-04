@@ -1,0 +1,4 @@
+SHELL=/bin/bash
+BASH_ENV=/container.env
+*/4 * * * * /usr/local/bin/python /app/scrape_gym.py
+# This extra line makes it a valid cron

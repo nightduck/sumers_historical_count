@@ -13,7 +13,7 @@ config = {
         'password': password,
         'host': 'db',
         'port': '3306',
-        'database': 'dms_db' # EDIT ME
+        'database': 'sumers_history'
     }
 
 ### EDIT ME
