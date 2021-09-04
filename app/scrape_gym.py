@@ -54,14 +54,15 @@ class GymParser(HTMLParser):
 
 
 passwd_fin = open("/run/secrets/db-password", 'r')
-password = passwd_fin.readline()
+password = passwd_fin.readline().rstrip()
+passwd_fin.close()
 
 config = {
         'user': 'root',
         'password': password,
         'host': 'db',
         'port': '3306',
-        'database': 'sumers_history' # EDIT ME
+        'database': 'sumers_history'
     }
 
 
